@@ -1,0 +1,219 @@
+{
+  "identite": {
+    "nom": "Chajai",
+    "prenom": "Hassan",
+    "titre_base": "Développeur Web Fullstack - Stagiaire",
+    "email": "chajai.hassan@gmail.com",
+    "telephone": "+32 492 41 15 45",
+    "ville": "Courcelles",
+    "pays": "Belgique",
+    "liens": [
+      {
+        "type": "GitHub",
+        "url": "https://github.com/hassinho10"
+      },
+      {
+        "type": "LinkedIn",
+        "url": "https://linkedin.com/in/hassanchajai"
+      }
+    ]
+  },
+  "resume_base": "Développeur web fullstack en reconversion, actuellement en formation intensive à Technofutur TIC à Gosselies. Après 5 ans en Sciences Biomédicales à la HELHa et une expérience en industrie pharmaceutique GMP chez Catalent et Novo Nordisk, reconversion vers le développement. Formation couvrant le stack JavaScript moderne : Angular et React côté front-end, Node.js, NestJS et Express côté back-end, SQL, Docker, Kubernetes, Cloud, SCRUM et cybersécurité. Conception de projets personnels pour résoudre des problèmes concrets. Objectif : intégrer une équipe en stage pour contribuer à des projets, monter en compétences et démontrer qu'un profil atypique est un atout.",
+  "objectifs": {
+    "type_recherche": [
+      "stage"
+    ],
+    "domaines_recherches": [
+      "développement web fullstack",
+      "développement web apps",
+      "technologies JavaScript modernes"
+    ],
+    "localisations": [
+      "Courcelles",
+      "Charleroi",
+      "Gosselies",
+      "Charleroi et alentours"
+    ],
+    "contrats": [
+      "stage conventionné FOREM",
+      "stage non rémunéré",
+      "stage de 5 semaines"
+    ]
+  },
+  "competences": {
+    "techniques": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Angular",
+      "React (introduction)",
+      "Ionic",
+      "Responsive Design",
+      "Node.js",
+      "NestJS",
+      "Express.js",
+      "APIs REST",
+      "PHP",
+      "SQL",
+      "MySQL",
+      "modélisation relationnelle",
+      "algorithmique",
+      "SQL déclaratif",
+      "SQL procédural",
+      "Ajax",
+      "cybersécurité",
+      "IA pour le développement"
+    ],
+    "outils": [
+      "Git",
+      "Docker",
+      "Kubernetes",
+      "Cloud",
+      "SCRUM",
+      "UML",
+      "Figma"
+    ],
+    "soft_skills": [
+      "autodidacte",
+      "rigueur",
+      "esprit analytique",
+      "esprit d'équipe",
+      "adaptabilité",
+      "gestion du stress",
+      "relation client",
+      "traçabilité",
+      "respect des normes qualité",
+      "travail en équipe critique"
+    ],
+    "langues": [
+      {
+        "langue": "Français",
+        "niveau": "Maternel"
+      },
+      {
+        "langue": "Anglais",
+        "niveau": "Professionnel technique"
+      },
+      {
+        "langue": "Italien",
+        "niveau": "Maternel"
+      }
+    ]
+  },
+  "experiences": [
+    {
+      "poste": "Opérateur / Technicien Pharma",
+      "entreprise": "Catalent / Novo Nordisk",
+      "lieu": "Bruxelles",
+      "date_debut": "2025",
+      "date_fin": "2025",
+      "description": "Expérience en industrie pharmaceutique GMP : rigueur, traçabilité, normes qualité, travail en équipe critique."
+    },
+    {
+      "poste": "Étudiant Horeca",
+      "entreprise": "Secteur restauration",
+      "lieu": "",
+      "date_debut": "2020",
+      "date_fin": "2024",
+      "description": "Gestion du stress, relation client, adaptabilité, travail en équipe."
+    }
+  ],
+  "formations": [
+    {
+      "intitule": "Développeur Web Apps Full Stack - Technologies JavaScript Modernes",
+      "etablissement": "Technofutur TIC",
+      "lieu": "Gosselies",
+      "date_debut": "2026",
+      "date_fin": "",
+      "statut": "en cours",
+      "duree": "6 mois",
+      "programme": [
+        "Algorithmique",
+        "SQL déclaratif et procédural",
+        "HTML / CSS",
+        "JavaScript et Ajax",
+        "Angular",
+        "React (introduction)",
+        "Node.js",
+        "NestJS et Express.js",
+        "APIs REST",
+        "Git",
+        "Docker et Kubernetes",
+        "Cloud",
+        "UML et SCRUM",
+        "Ionic",
+        "Cybersécurité",
+        "IA pour le développement",
+        "Projet individuel Web App"
+      ]
+    },
+    {
+      "intitule": "Sciences Biomédicales",
+      "etablissement": "HELHa",
+      "lieu": "Montignies-sur-Sambre",
+      "date_debut": "09-2020",
+      "date_fin": "06-2025",
+      "statut": "",
+      "duree": "",
+      "programme": []
+    },
+    {
+      "intitule": "CESS",
+      "etablissement": "Athénée Royal Les Marlaires",
+      "lieu": "Gosselies",
+      "date_debut": "",
+      "date_fin": "06-2020",
+      "statut": "",
+      "duree": "",
+      "programme": []
+    }
+  ],
+  "projets": [
+    {
+      "nom": "BarberConnect",
+      "description": "Application de gestion de rendez-vous : calendrier dynamique, créneaux, logique métier, interface client.",
+      "technologies": []
+    },
+    {
+      "nom": "RestoOrder",
+      "description": "Application de commande en ligne : menu dynamique, panier, suivi temps réel, base SQL structurée.",
+      "technologies": [
+        "SQL"
+      ]
+    },
+    {
+      "nom": "Msemmen Pro",
+      "description": "Site e-commerce : catalogue produits, filtrage dynamique, UX soignée, responsive.",
+      "technologies": [
+        "responsive"
+      ]
+    },
+    {
+      "nom": "Life Manager",
+      "description": "Dashboard productivité : statistiques, suivi d'habitudes, indicateurs visuels.",
+      "technologies": []
+    }
+  ],
+  "certifications": [],
+  "centres_interet": [],
+  "contraintes": {
+    "ne_pas_inventer": true,
+    "adaptation_autorisee": [
+      "titre professionnel",
+      "résumé",
+      "ordre des compétences",
+      "mise en avant des expériences pertinentes",
+      "mots-clés liés à l’offre",
+      "lettre de motivation",
+      "message de candidature"
+    ],
+    "adaptation_interdite": [
+      "faux diplôme",
+      "fausse expérience",
+      "fausse compétence",
+      "fausse entreprise",
+      "fausse durée",
+      "fausse certification"
+    ]
+  }
+}

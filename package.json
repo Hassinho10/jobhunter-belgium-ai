@@ -1,0 +1,31 @@
+{
+  "name": "jobhunter-belgium-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Base locale pour analyser et scorer des offres d'emploi ou de stage en Belgique.",
+  "scripts": {
+    "start": "node app/server.js",
+    "score:test": "node scripts/score-offer.js",
+    "adapt:test": "node scripts/prepare-adaptation.js",
+    "validate:oui": "node scripts/validate-application.js OUI",
+    "validate:non": "node scripts/validate-application.js NON",
+    "validate:modifier": "node scripts/validate-application.js MODIFIER",
+    "clarify:test": "node scripts/apply-clarifications.js",
+    "generate:cv:test": "node scripts/generate-cv-html.js",
+    "generate:lettre:test": "node scripts/generate-lettre-html.js",
+    "check:html:test": "node scripts/check-generated-html.js",
+    "generate:pdf:test": "node scripts/generate-pdf.js",
+    "tracking:test": "node scripts/generate-tracking.js",
+    "proofs:test": "node scripts/check-proofs.js",
+    "package:review:test": "node scripts/create-review-package.js",
+    "sheets:prepare:test": "node scripts/prepare-google-sheets-import.js",
+    "app:start": "node app/server.js",
+    "app:network": "set HOST=0.0.0.0&& node app/server.js",
+    "pipeline:test": "node scripts/run-test-pipeline.js",
+    "pipeline:current": "node scripts/run-pipeline-for-offer.js",
+    "jobs:search": "node scripts/search-jobs.js",
+    "jobs:rank": "node scripts/search-and-score-jobs.js",
+    "cv:upgrade:pdf": "node scripts/generate-upgraded-cv-pdfs.js",
+    "publish:check": "node scripts/publish-check.js"
+  }
+}

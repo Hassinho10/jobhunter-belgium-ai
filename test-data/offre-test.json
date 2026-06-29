@@ -1,0 +1,77 @@
+{
+  "id_offre": "TEST-001",
+  "date_detection": "2026-06-07",
+  "source": "Offre test fictive",
+  "entreprise": "DigitAdmin Wallonie ASBL",
+  "poste": "Stagiaire Assistant Digital & Automatisation",
+  "lieu": "Charleroi, Belgique",
+  "type_contrat": "Stage conventionné",
+  "lien_offre": "",
+  "description": "DigitAdmin Wallonie ASBL accompagne de petites structures locales dans la modernisation de leurs processus administratifs. Dans le cadre d'un stage conventionné, l'équipe recherche un profil junior motivé pour aider à améliorer les outils numériques internes, documenter les procédures et proposer de petites automatisations simples. Le stage convient à une personne en formation digitale ou développement web, à l'aise avec les outils numériques, curieuse de l'automatisation et capable de travailler avec rigueur sur des données administratives.",
+  "missions": [
+    "Analyser des tâches administratives répétitives et identifier des pistes de simplification.",
+    "Aider à structurer des tableaux de suivi pour les demandes internes et les contacts partenaires.",
+    "Créer ou améliorer de petits formulaires, tableaux ou interfaces simples pour faciliter le travail de l'équipe.",
+    "Documenter les procédures existantes de manière claire.",
+    "Tester des automatisations simples avec des outils no-code ou scripts légers, sous supervision.",
+    "Participer au support utilisateur interne pour les outils numériques."
+  ],
+  "competences_requises": [
+    "Bonne maîtrise des outils numériques courants.",
+    "Bases en HTML, CSS ou JavaScript.",
+    "Capacité à structurer des informations dans des tableaux.",
+    "Rigueur dans la manipulation de données administratives.",
+    "Bonne communication écrite en français.",
+    "Motivation pour apprendre et travailler en équipe."
+  ],
+  "competences_souhaitees": [
+    "Notions d'automatisation ou de no-code.",
+    "Bases en SQL ou logique de base de données.",
+    "Intérêt pour l'IA appliquée à la productivité.",
+    "Connaissance de Git ou d'un outil de suivi de projet.",
+    "Sens de l'amélioration continue.",
+    "Expérience personnelle ou scolaire sur un projet web."
+  ],
+  "outils_mentionnes": [
+    "Google Sheets",
+    "Google Forms",
+    "Notion",
+    "Trello",
+    "Make ou n8n",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "SQL"
+  ],
+  "langues": [
+    {
+      "langue": "Français",
+      "niveau": "Très bon niveau écrit et oral"
+    },
+    {
+      "langue": "Anglais",
+      "niveau": "Compréhension technique appréciée"
+    }
+  ],
+  "niveau_experience": "Junior accepté, stage possible, première expérience non obligatoire.",
+  "formation_souhaitee": "Formation en développement web, assistant digital, bureautique avancée, informatique de gestion ou équivalent.",
+  "modalites": {
+    "teletravail": "Possibilité d'un jour par semaine après prise en main.",
+    "temps_travail": "Temps plein ou 4/5 selon convention de stage.",
+    "date_debut": "Dès que possible, idéalement entre mai et juillet 2026."
+  },
+  "criteres_importants": [
+    "Stage conventionné accepté.",
+    "Profil junior accepté.",
+    "Lieu compatible avec Charleroi et alentours.",
+    "Missions liées aux outils numériques, à l'automatisation et au support administratif.",
+    "Bases web et logique de données utiles.",
+    "Rigueur et communication en français importantes."
+  ],
+  "points_attention": [
+    "Le poste est plus orienté assistant digital et support administratif que développement web pur.",
+    "Les outils no-code comme Make ou n8n sont souhaités mais pas obligatoires.",
+    "Google Sheets et Google Forms sont mentionnés alors qu'ils ne sont pas explicitement listés dans le profil de base.",
+    "La date exacte et la durée du stage devront être confirmées avec l'entreprise fictive."
+  ]
+}

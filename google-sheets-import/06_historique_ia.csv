@@ -1,0 +1,2 @@
+date_action,id_offre,action_ia,modele_utilise,score_ia,resume_ia,decision_ia,validation_humaine,commentaire
+2026-06-07,TEST-001,scoring_offre_et_preparation_locale,moteur local sans IA externe,78,Score local 78/100 pour Stagiaire Assistant Digital & Automatisation.,opportunité intéressante,OUI,"Analyse locale transparente, sans connexion externe."

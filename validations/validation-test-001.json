@@ -1,0 +1,13 @@
+{
+  "id_offre": "TEST-001",
+  "poste": "Stagiaire Assistant Digital & Automatisation",
+  "entreprise": "DigitAdmin Wallonie ASBL",
+  "score_compatibilite": 78,
+  "decision_preparation": "MODIFIER",
+  "decision_humaine": "OUI",
+  "statut_validation": "valide_pour_generation",
+  "prochaine_action": "generer_cv_et_message",
+  "date_validation": "2026-06-25T12:39:23.650Z",
+  "validation_humaine_requise": true,
+  "commentaire_hassan": ""
+}

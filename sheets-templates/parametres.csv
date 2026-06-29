@@ -1,0 +1,14 @@
+champ,valeur
+nom,
+prenom,
+email,
+telephone,
+ville,
+rayon_km,
+type_recherche,"stage, emploi, job étudiant"
+domaines_recherches,
+mots_cles_positifs,
+mots_cles_negatifs,
+sources_prioritaires,"FOREM, Actiris, VDAB, Jooble, Adzuna, Gmail"
+score_minimum,75
+validation_obligatoire,oui

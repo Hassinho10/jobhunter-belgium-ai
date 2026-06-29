@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV visuel - Hassan Chajai</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    @media print { body { background: #0b0f14; padding: 0; } .page { box-shadow: none; margin: 0; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; padding: 12px; background: #0b0f14; color: #eef7fb; font-family: Arial, Helvetica, sans-serif; line-height: 1.22; }
+    .page { width: 190mm; min-height: 267mm; overflow: hidden; margin: 0 auto; padding: 12px 16px; background: linear-gradient(90deg, rgba(0,245,255,.05) 1px, transparent 1px), linear-gradient(rgba(0,245,255,.04) 1px, transparent 1px), #0b0f14; background-size: 28px 28px; box-shadow: 0 0 30px rgba(0,245,255,.14); }
+    .top { display: grid; grid-template-columns: 1fr 238px; gap: 12px; border-bottom: 2px solid #00d9f5; padding-bottom: 8px; margin-bottom: 9px; }
+    h1 { margin: 0 0 5px; color: #fff; font-size: 29px; line-height: 1; letter-spacing: 1.6px; text-transform: uppercase; }
+    .role { color: #00d9f5; font-weight: 700; letter-spacing: .9px; text-transform: uppercase; font-size: 11.5px; margin-bottom: 4px; }
+    .headline { color: #b9c8d3; font-size: 9.4px; max-width: 560px; margin: 0; }
+    .contact { display: grid; gap: 2px; color: #d9eef5; font-size: 8.2px; border-left: 1px solid rgba(0,217,245,.45); padding-left: 10px; font-style: normal; }
+    .contact a { color: #d9eef5; text-decoration: none; }
+    .grid { display: grid; grid-template-columns: 202px 1fr; gap: 9px; }
+    section { border: 1px solid rgba(0,217,245,.18); background: rgba(17,24,39,.72); padding: 6px; margin-bottom: 5px; }
+    h2 { margin: 0 0 4px; color: #00d9f5; font-size: 9px; letter-spacing: 1.2px; text-transform: uppercase; border-bottom: 1px solid rgba(0,217,245,.45); padding-bottom: 2px; }
+    h3 { margin: 0 0 2px; color: #fff; font-size: 9.5px; }
+    p { margin: 0 0 2px; }
+    .muted { color: #aab9c4; font-size: 8px; }
+    .small { font-size: 7.4px; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 2px; }
+    .tag { border: 1px solid rgba(0,217,245,.5); color: #f4fdff; padding: 1px 3px; font-size: 7px; background: rgba(0,217,245,.06); }
+    .project { border-left: 3px solid #00d9f5; padding-left: 6px; margin-bottom: 4px; }
+    .project-grid { display: grid; grid-template-columns: 58px 1fr; gap: 1px 4px; font-size: 7.7px; }
+    .label { color: #00d9f5; font-weight: 700; }
+    .timeline-item { margin-bottom: 3px; }
+    .aides { border-color: rgba(59,130,246,.36); background: rgba(59,130,246,.08); }
+    .warning { color: #d8e9ef; font-size: 7.2px; border-top: 1px solid rgba(0,217,245,.25); margin-top: 3px; padding-top: 3px; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="top">
+      <div>
+        <h1>Hassan Chajai</h1>
+        <div class="role">Développeur Web Apps Full Stack - Stagiaire</div>
+        <p class="headline">Profil junior en reconversion vers le développement web, avec un parcours scientifique et pharmaceutique qui apporte rigueur, traçabilité, méthode et respect des exigences qualité.</p>
+      </div>
+      <address class="contact">
+        <span>Courcelles, Belgique</span>
+        <a href="mailto:chajai.hassan@gmail.com">chajai.hassan@gmail.com</a>
+        <span>+32 492 41 15 45</span>
+        <a href="https://github.com/hassinho10">github.com/hassinho10</a>
+        <a href="https://linkedin.com/in/hassanchajai">linkedin.com/in/hassanchajai</a>
+      </address>
+    </header>
+
+    <div class="grid">
+      <aside>
+        <section>
+          <h2>Compétences</h2>
+          <h3>Front-end</h3>
+          <div class="tag-list"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Angular</span><span class="tag">React intro</span><span class="tag">Ionic</span><span class="tag">Responsive</span></div>
+          <h3 style="margin-top:5px;">Back-end</h3>
+          <div class="tag-list"><span class="tag">Node.js</span><span class="tag">NestJS</span><span class="tag">Express.js</span><span class="tag">APIs REST</span><span class="tag">PHP</span></div>
+          <h3 style="margin-top:5px;">Données / outils</h3>
+          <div class="tag-list"><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Cloud</span><span class="tag">SCRUM</span><span class="tag">UML</span><span class="tag">Figma</span></div>
+        </section>
+        <section>
+          <h2>Langues</h2>
+          <p class="muted"><strong>Français</strong> maternel</p>
+          <p class="muted"><strong>Italien</strong> maternel</p>
+          <p class="muted"><strong>Anglais</strong> professionnel technique</p>
+        </section>
+        <section>
+          <h2>Méthode</h2>
+          <p class="muted">Rigueur, traçabilité et respect des normes qualité acquis en contexte pharmaceutique GMP.</p>
+          <p class="muted">Relation client, adaptabilité et gestion du stress renforcées en horeca.</p>
+        </section>
+        <section class="aides">
+          <h2>Aides FOREM</h2>
+          <div class="tag-list"><span class="tag">APE</span><span class="tag">PFI</span><span class="tag">SESAM</span></div>
+          <p class="warning">Aides à l'embauche en Belgique, à vérifier selon l'employeur et la situation administrative.</p>
+        </section>
+      </aside>
+
+      <div>
+        <section>
+          <h2>À propos</h2>
+          <p class="muted">Développeur web full stack en formation intensive à Technofutur TIC. Je construis ma reconversion autour de projets web concrets. Mon parcours en sciences biomédicales et en industrie pharmaceutique GMP m'a donné une méthode structurée : documentation, précision, traçabilité et respect des procédures. Je cherche un stage junior pour contribuer à des projets web, outils numériques, automatisation ou support digital.</p>
+        </section>
+
+        <section>
+          <h2>Projets personnels</h2>
+          <article class="project">
+            <h3>JobHunter Belgium AI</h3>
+            <div class="project-grid">
+              <span class="label">Objectif</span><span>Assistant local de recherche emploi/stage : scoring, CV/lettre, PDF, suivi FOREM, preuves.</span>
+              <span class="label">Stack</span><span>HTML, CSS, JavaScript, Node.js, JSON/CSV. GitHub à ajouter après publication.</span>
+              <span class="label">Preuve</span><span>Projet réel en cours : automatisation locale, traçabilité, logique produit.</span>
+            </div>
+          </article>
+          <article class="project">
+            <h3>BarberConnect</h3>
+            <div class="project-grid">
+              <span class="label">Objectif</span><span>Gestion de rendez-vous : calendrier, créneaux, logique métier, interface client.</span>
+              <span class="label">Liens</span><span>GitHub à ajouter ; démo à ajouter ; stack exacte à préciser.</span>
+              <span class="label">Preuve</span><span>Modélisation d'un besoin métier et interface orientée utilisateur.</span>
+            </div>
+          </article>
+          <article class="project">
+            <h3>RestoOrder</h3>
+            <div class="project-grid">
+              <span class="label">Objectif</span><span>Commande en ligne : menu dynamique, panier, suivi temps réel, base SQL structurée.</span>
+              <span class="label">Liens</span><span>GitHub à ajouter ; démo à ajouter ; stack à préciser au-delà de SQL.</span>
+              <span class="label">Preuve</span><span>Logique métier, données et parcours utilisateur.</span>
+            </div>
+          </article>
+          <article class="project">
+            <h3>Msemmen Pro</h3>
+            <div class="project-grid">
+              <span class="label">Objectif</span><span>Site e-commerce : catalogue, filtrage dynamique, UX soignée et responsive.</span>
+              <span class="label">Liens</span><span>GitHub à ajouter ; démo à ajouter ; stack exacte à préciser.</span>
+              <span class="label">Preuve</span><span>Présentation produit, interface et adaptation mobile.</span>
+            </div>
+          </article>
+          <article class="project">
+            <h3>Life Manager</h3>
+            <div class="project-grid">
+              <span class="label">Objectif</span><span>Dashboard productivité : statistiques, habitudes et indicateurs visuels.</span>
+              <span class="label">Liens</span><span>GitHub à ajouter ; démo à ajouter ; stack exacte à préciser.</span>
+              <span class="label">Preuve</span><span>Structuration de données et tableau de bord lisible.</span>
+            </div>
+          </article>
+        </section>
+
+        <section>
+          <h2>Formation</h2>
+          <div class="timeline-item">
+            <h3>Développeur Web Apps Full Stack - Technologies JavaScript Modernes</h3>
+            <p class="muted">Technofutur TIC - Gosselies | 2026, 6 mois, en cours | fin exacte à préciser.</p>
+            <p class="small muted">Algorithmique, SQL, HTML/CSS, JavaScript, Ajax, Angular, React intro, Node.js, NestJS, Express.js, APIs REST, Git, Docker, Kubernetes, Cloud, UML, SCRUM, Ionic, cybersécurité, IA pour le développement.</p>
+          </div>
+          <div class="timeline-item"><h3>Sciences Biomédicales</h3><p class="muted">HELHa - Montignies-sur-Sambre | 09-2020 - 06-2025</p></div>
+          <div class="timeline-item"><h3>CESS</h3><p class="muted">Athénée Royal Les Marlaires - Gosselies | 06-2020</p></div>
+        </section>
+
+        <section>
+          <h2>Expériences</h2>
+          <div class="timeline-item">
+            <h3>Opérateur / Technicien Pharma - Catalent / Novo Nordisk</h3>
+            <p class="muted">Bruxelles | 2025 | dates précises à confirmer. Industrie GMP : rigueur, traçabilité, normes qualité, travail en équipe critique.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Étudiant Horeca - Secteur restauration</h3>
+            <p class="muted">2020 - 2024 | gestion du stress, relation client, adaptabilité, travail en équipe.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

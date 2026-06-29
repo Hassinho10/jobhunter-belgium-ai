@@ -1,0 +1,156 @@
+{
+  "id_offre": "TEST-001",
+  "poste": "Stagiaire Assistant Digital & Automatisation",
+  "entreprise": "DigitAdmin Wallonie ASBL",
+  "score_total": 78,
+  "decision": "opportunité intéressante",
+  "details_score": {
+    "competences": {
+      "score": 26,
+      "max": 30,
+      "matches": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "SQL / données",
+        "rigueur",
+        "travail en équipe",
+        "communication / relation client",
+        "français"
+      ],
+      "manquants": [
+        "support utilisateur"
+      ]
+    },
+    "outils": {
+      "score": 11,
+      "max": 20,
+      "matches": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "SQL"
+      ],
+      "manquants": [
+        "Google Sheets",
+        "Google Forms",
+        "Notion",
+        "Trello",
+        "Make ou n8n"
+      ]
+    },
+    "contrat_localisation": {
+      "score": 17,
+      "max": 20,
+      "matches": [
+        "stage compatible",
+        "stage conventionné compatible",
+        "localisation Charleroi compatible",
+        "zone proche du profil",
+        "date de début à vérifier mais plausible",
+        "temps de travail potentiellement compatible"
+      ],
+      "points_attention": [
+        "La date de début exacte doit être confirmée.",
+        "La durée exacte du stage de Hassan doit être confirmée."
+      ]
+    },
+    "niveau": {
+      "score": 15,
+      "max": 15,
+      "matches": [
+        "profil junior accepté",
+        "stage possible",
+        "première expérience non obligatoire"
+      ],
+      "points_attention": []
+    },
+    "objectifs": {
+      "score": 9,
+      "max": 15,
+      "matches": [
+        "stage",
+        "développement web",
+        "IA / productivité",
+        "projets concrets"
+      ],
+      "points_attention": [
+        "outils numériques à confirmer dans le profil.",
+        "automatisation présent dans l'offre mais pas fortement documenté dans le profil.",
+        "support administratif digital présent dans l'offre mais pas fortement documenté dans le profil."
+      ]
+    }
+  },
+  "points_forts": [
+    "Stage et profil junior acceptés.",
+    "Localisation Charleroi compatible avec la zone de recherche.",
+    "Compétence alignée : HTML.",
+    "Compétence alignée : CSS.",
+    "Compétence alignée : JavaScript.",
+    "Compétence alignée : SQL / données.",
+    "Compétence alignée : rigueur.",
+    "Compétence alignée : travail en équipe.",
+    "Compétence alignée : communication / relation client.",
+    "Compétence alignée : français.",
+    "Outil ou technologie aligné : HTML.",
+    "Outil ou technologie aligné : CSS.",
+    "Outil ou technologie aligné : JavaScript.",
+    "Outil ou technologie aligné : SQL.",
+    "Rigueur et travail en équipe cohérents avec le parcours pharma GMP et Horeca."
+  ],
+  "points_faibles": [
+    "Compétence non confirmée dans le profil : support utilisateur.",
+    "Outil non confirmé dans le profil : Google Sheets.",
+    "Outil non confirmé dans le profil : Google Forms.",
+    "Outil non confirmé dans le profil : Notion.",
+    "Outil non confirmé dans le profil : Trello.",
+    "Outil non confirmé dans le profil : Make ou n8n.",
+    "La date de début exacte doit être confirmée.",
+    "La durée exacte du stage de Hassan doit être confirmée.",
+    "outils numériques à confirmer dans le profil.",
+    "automatisation présent dans l'offre mais pas fortement documenté dans le profil.",
+    "support administratif digital présent dans l'offre mais pas fortement documenté dans le profil.",
+    "Le poste est partiellement orienté support administratif, pas uniquement développement fullstack."
+  ],
+  "mots_cles_correspondants": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "SQL / données",
+    "rigueur",
+    "travail en équipe",
+    "communication / relation client",
+    "français",
+    "SQL",
+    "stage compatible",
+    "stage conventionné compatible",
+    "localisation Charleroi compatible",
+    "zone proche du profil",
+    "date de début à vérifier mais plausible",
+    "temps de travail potentiellement compatible",
+    "profil junior accepté",
+    "stage possible",
+    "première expérience non obligatoire",
+    "stage",
+    "développement web",
+    "IA / productivité",
+    "projets concrets"
+  ],
+  "mots_cles_manquants": [
+    "support utilisateur",
+    "Google Sheets",
+    "Google Forms",
+    "Notion",
+    "Trello",
+    "Make ou n8n"
+  ],
+  "recommandation": "Opportunité intéressante à valider humainement. Vérifier la part réelle d'automatisation, de développement web et la durée exacte du stage avant toute candidature.",
+  "prochaines_actions": [
+    "Faire valider humainement le score et la décision.",
+    "Vérifier la durée exacte du stage et la date de début.",
+    "Clarifier la part entre support administratif, automatisation et développement web.",
+    "Confirmer les outils réellement utilisés par l'équipe.",
+    "Ne générer un CV ou une lettre adaptée qu'après validation humaine."
+  ],
+  "validation_humaine_requise": true
+}

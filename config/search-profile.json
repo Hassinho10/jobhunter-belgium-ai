@@ -1,0 +1,26 @@
+{
+  "mots_cles": [
+    "stage développeur web",
+    "assistant digital",
+    "automatisation",
+    "support informatique junior",
+    "développeur junior",
+    "stage informatique",
+    "outils numériques"
+  ],
+  "lieux": [
+    "Charleroi",
+    "Bruxelles",
+    "Namur",
+    "Liège",
+    "Wallonie",
+    "Belgique"
+  ],
+  "type_recherche": [
+    "stage",
+    "junior",
+    "premier emploi"
+  ],
+  "score_minimum": 75,
+  "limite_resultats": 20
+}

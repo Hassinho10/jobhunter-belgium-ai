@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Local runtime outputs
+generated/
+review-packages/
+proofs/*/
+tracking/
+data/jobs-found.*
+data/jobs-ranked.*
+data/current-offer.json
+test-data/current-offer.json
+validations/current-validation.json
+
+# Local reports generated during demos
+reports/current-*
+reports/job-search-report.md
+reports/job-ranking-report.md
+reports/*.png
+reports/*.pdf
+
+# Generated PDFs and work backups
+*.pdf
+*.before-encoding-fix.html
+*.before-one-page.html
+*_BASE.html
+cv-upgrade/original-backup.html
+cv-upgrade/pdf-generation-*.md
+
+# Temporary files
+tmp/
+*.log
+
+# Browser/PDF temporary profiles
+.pdf-profiles/
+cv-upgrade/.pdf-profiles/

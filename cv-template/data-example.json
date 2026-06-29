@@ -1,0 +1,45 @@
+{
+  "identite": {
+    "nom": "Nom",
+    "prenom": "Prenom",
+    "email": "email@example.com",
+    "telephone": "+32 000 00 00 00",
+    "ville": "Ville",
+    "pays": "Belgique"
+  },
+  "objectif": "Objectif professionnel ou recherche de stage.",
+  "profil": "Résumé fidèle au CV de base.",
+  "competences": [
+    "Compétence réelle 1",
+    "Compétence réelle 2",
+    "Compétence réelle 3"
+  ],
+  "experiences": [
+    {
+      "poste": "Poste ou expérience",
+      "organisation": "Organisation",
+      "lieu": "Ville",
+      "date_debut": "AAAA-MM",
+      "date_fin": "AAAA-MM",
+      "missions": [
+        "Mission réelle.",
+        "Responsabilité réelle."
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "intitule": "Diplôme ou formation",
+      "etablissement": "Etablissement",
+      "lieu": "Ville",
+      "date_debut": "AAAA-MM",
+      "date_fin": "AAAA-MM"
+    }
+  ],
+  "langues": [
+    {
+      "langue": "Français",
+      "niveau": "Niveau réel"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+id_candidature,date_candidature,entreprise,poste,source,lien_offre,mode_candidature,email_contact,cv_utilise,lettre_utilisee,message_utilise,statut,preuve_disponible,preuve_url,date_relance,reponse_recue,commentaire
+CAND-TEST-001,,DigitAdmin Wallonie ASBL,Stagiaire Assistant Digital & Automatisation,Offre test fictive,,,,generated/pdf/cv-test-001.pdf,generated/pdf/lettre-test-001.pdf,generated/messages/message-test-001.txt,candidature_prete_non_envoyee,non,,,,Candidature préparée localement. Aucun envoi réel effectué.

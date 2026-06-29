@@ -1,0 +1,68 @@
+{
+  "id_offre": "TEST-001",
+  "poste": "Stagiaire Assistant Digital & Automatisation",
+  "entreprise": "DigitAdmin Wallonie ASBL",
+  "score_compatibilite": 78,
+  "decision_preparation": "MODIFIER",
+  "titre_cv_recommande": "Stagiaire Assistant Digital & Automatisation",
+  "resume_recommande": "Développeur web fullstack en reconversion, actuellement en formation intensive à Technofutur TIC. Profil junior/stagiaire avec bases en HTML, CSS, JavaScript et SQL, rigueur issue d'un parcours en sciences biomédicales et expérience en environnement pharmaceutique GMP. Intérêt pour les outils numériques, la structuration de données et l'amélioration de processus, dans une démarche d'apprentissage encadrée.",
+  "competences_a_mettre_en_avant": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "SQL / données",
+    "rigueur",
+    "travail en équipe",
+    "communication / relation client",
+    "français",
+    "SQL",
+    "bases web",
+    "structuration de données",
+    "communication en français"
+  ],
+  "experiences_projets_a_mettre_en_avant": [
+    "RestoOrder : application de commande en ligne avec menu dynamique, panier, suivi temps réel et base SQL structurée.",
+    "Life Manager : dashboard de productivité avec statistiques, suivi d'habitudes et indicateurs visuels.",
+    "BarberConnect : application de gestion de rendez-vous avec calendrier dynamique, créneaux et interface client.",
+    "Expérience pharma GMP : rigueur, traçabilité, normes qualité et travail en équipe critique.",
+    "Expérience Horeca : relation client, adaptabilité, gestion du stress et travail en équipe."
+  ],
+  "elements_a_ne_pas_surexposer": [
+    "Ne pas présenter Hassan comme expert en automatisation.",
+    "Ne pas prétendre maîtriser Make, n8n, Google Sheets, Google Forms, Notion ou Trello.",
+    "Ne pas transformer le projet JobHunter Belgium AI en expérience professionnelle client.",
+    "Ne pas présenter le poste comme un stage fullstack pur.",
+    "Ne pas exagérer le support utilisateur, qui n'est pas explicitement documenté comme compétence principale."
+  ],
+  "points_a_verifier_avec_hassan": [
+    "Confirmer son niveau réel sur Google Sheets et Google Forms.",
+    "Confirmer s'il a déjà testé Make, n8n, Notion ou Trello.",
+    "Confirmer s'il accepte une mission hybride assistant digital / support administratif / automatisation.",
+    "Confirmer la durée exacte du stage souhaitée et la compatibilité avec l'offre.",
+    "Confirmer la disponibilité de début de stage.",
+    "Confirmer s'il souhaite mentionner le projet personnel JobHunter Belgium AI dans le message."
+  ],
+  "limites_adaptation": [
+    "Le CV original ne doit pas être modifié à cette étape.",
+    "La proposition ne génère pas de CV adapté ni de lettre adaptée.",
+    "Les informations non présentes dans profile-data.json ne sont pas considérées comme acquises.",
+    "Les outils no-code et bureautiques cités par l'offre restent à confirmer.",
+    "Toute candidature reste bloquée tant qu'Hassan n'a pas validé explicitement."
+  ],
+  "risques_survente": [
+    "Survendre l'automatisation alors que le profil documente surtout le développement web et l'intérêt IA.",
+    "Laisser croire à une maîtrise de n8n, Make ou Google Sheets non confirmée.",
+    "Présenter un profil trop administratif alors que l'objectif principal reste le développement web fullstack.",
+    "Utiliser des formulations trop affirmatives sur le support utilisateur."
+  ],
+  "message_candidature_court": "Madame, Monsieur,\n\nVotre offre de Stagiaire Assistant Digital & Automatisation a retenu mon attention, car elle combine outils numériques, structuration de données et amélioration de processus.\n\nActuellement en formation Développeur Web Apps Full Stack à Technofutur TIC, je travaille avec HTML, CSS, JavaScript et SQL. Mon parcours en sciences biomédicales et en environnement pharmaceutique GMP m'a aussi apporté rigueur, traçabilité et esprit d'équipe.\n\nJe développe actuellement un projet personnel d'automatisation et de suivi de candidatures, ce qui renforce mon intérêt pour les outils digitaux appliqués à des besoins concrets. Je reste toutefois dans une démarche junior/stage et souhaite apprendre au contact d'une équipe.\n\nJe serais ravi d'échanger avec vous afin de vérifier si mon profil peut répondre à vos besoins.\n\nBien cordialement,\nHassan Chajai",
+  "validation_humaine": {
+    "requise": true,
+    "choix_possibles": [
+      "OUI",
+      "NON",
+      "MODIFIER"
+    ],
+    "statut": "en_attente"
+  }
+}

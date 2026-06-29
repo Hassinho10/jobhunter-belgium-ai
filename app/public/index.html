@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobHunter Studio</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">JobHunter Belgium AI</p>
+      <h1>JobHunter Studio</h1>
+    </div>
+    <div class="header-status" aria-label="État de l'application">
+      <span class="status-dot"></span>
+      Local uniquement
+    </div>
+  </header>
+
+  <section class="search-panel" aria-labelledby="automatic-search-title">
+    <div class="search-copy">
+      <p class="section-index">RECHERCHE API</p>
+      <h2 id="automatic-search-title">Offres en Belgique</h2>
+      <p>FOREM Open Data en priorité. Adzuna et Jooble seulement si leurs clés sont configurées.</p>
+    </div>
+    <button id="search-jobs-button" class="button button-primary" type="button">
+      Chercher des offres automatiquement
+    </button>
+    <span id="search-summary" class="search-summary">Aucune recherche lancée</span>
+  </section>
+
+  <section id="jobs-results" class="jobs-results" aria-live="polite" hidden>
+    <div class="jobs-results-heading">
+      <h2>Offres classées</h2>
+      <a href="/files/reports/job-ranking-report.md" target="_blank" rel="noreferrer">Voir le rapport</a>
+    </div>
+    <div id="jobs-list" class="jobs-list"></div>
+  </section>
+
+  <main class="workspace">
+    <section class="input-panel" aria-labelledby="offer-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-index">01</p>
+          <h2 id="offer-title">Offre à analyser</h2>
+        </div>
+        <button id="fill-example" class="button button-quiet" type="button">Charger TEST-001</button>
+      </div>
+
+      <form id="offer-form">
+        <div class="field-grid">
+          <label>
+            <span>Entreprise</span>
+            <input id="entreprise" name="entreprise" autocomplete="organization">
+          </label>
+          <label>
+            <span>Poste</span>
+            <input id="poste" name="poste" required>
+          </label>
+          <label>
+            <span>Lieu</span>
+            <input id="lieu" name="lieu">
+          </label>
+          <label>
+            <span>Source</span>
+            <input id="source" name="source">
+          </label>
+          <label>
+            <span>Type de contrat</span>
+            <input id="type_contrat" name="type_contrat">
+          </label>
+          <label>
+            <span>Lien de l’offre</span>
+            <input id="lien_offre" name="lien_offre" type="url">
+          </label>
+        </div>
+
+        <label class="description-field">
+          <span>Description complète</span>
+          <textarea id="description" name="description" required></textarea>
+        </label>
+
+        <div class="action-bar">
+          <button id="analyze-button" class="button button-primary" type="submit">
+            Analyser l’offre
+          </button>
+          <button id="generate-button" class="button button-secondary" type="button" disabled>
+            Générer candidature
+          </button>
+          <span id="activity" class="activity" role="status" aria-live="polite">Prêt</span>
+        </div>
+      </form>
+    </section>
+
+    <section class="result-panel" aria-labelledby="result-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-index">02</p>
+          <h2 id="result-title">Résultat</h2>
+        </div>
+        <span id="current-status" class="status-label">En attente d’analyse</span>
+      </div>
+
+      <div class="score-row">
+        <div class="score-block">
+          <span class="score-label">Compatibilité</span>
+          <strong id="score-value">--</strong>
+          <span class="score-max">/100</span>
+        </div>
+        <div class="decision-block">
+          <span>Décision</span>
+          <strong id="decision-value">Non calculée</strong>
+          <span id="recommendation-value" class="recommendation">Validation requise</span>
+        </div>
+      </div>
+
+      <div class="result-columns">
+        <section>
+          <h3>Points forts</h3>
+          <ul id="strengths-list" class="result-list">
+            <li>Aucune analyse disponible.</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Points faibles</h3>
+          <ul id="weaknesses-list" class="result-list">
+            <li>Aucune analyse disponible.</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="files-section">
+        <h3>Fichiers locaux</h3>
+        <div id="file-links" class="file-links">
+          <span>Aucun fichier généré.</span>
+        </div>
+      </section>
+
+      <div class="safety-strip">
+        <span>Candidature envoyée</span>
+        <strong>NON</strong>
+        <span>Preuve d’envoi</span>
+        <strong>AUCUNE</strong>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="confirm-dialog">
+    <form method="dialog">
+      <p class="section-index">VALIDATION HUMAINE</p>
+      <h2>Confirmer la génération ?</h2>
+      <p>Cette action crée les documents locaux. Elle n’envoie aucune candidature.</p>
+      <div class="dialog-actions">
+        <button id="confirm-no" class="button button-quiet" value="NON">NON</button>
+        <button id="confirm-yes" class="button button-primary" value="OUI">OUI</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="/app.js"></script>
+</body>
+</html>

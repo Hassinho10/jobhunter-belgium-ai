@@ -1,0 +1,2 @@
+id_offre,date_detection,source,entreprise,poste,lieu,type_contrat,lien_offre,score_ia,decision_ia,decision_humaine,statut,commentaire
+TEST-001,2026-06-07,Offre test fictive,DigitAdmin Wallonie ASBL,Stagiaire Assistant Digital & Automatisation,"Charleroi, Belgique",Stage conventionné,,78,opportunité intéressante,OUI,candidature_prete_non_envoyee,"Offre test fictive, candidature préparée localement mais non envoyée."

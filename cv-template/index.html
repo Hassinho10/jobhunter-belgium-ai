@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Hassan Chajai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+        @page { size: 210mm 297mm; margin: 0; } @media print { body { padding: 0 !important; background-color: #0B0F14 !important; } .cv-container { width: 210mm !important; height: 297mm !important; box-shadow: none !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } * { margin: 0; padding: 0; box-sizing: border-box; } body { background-color: #0B0F14; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; } .cv-container { width: 210mm; height: 297mm; background-color: #0B0F14; position: relative; box-shadow: 0 0 20px rgba(0,245,255,0.1); overflow: hidden; } .grid-background { position: absolute; inset: 0; opacity: 0.03; background-image: linear-gradient(#00F5FF 1px, transparent 1px), linear-gradient(90deg, #00F5FF 1px, transparent 1px); background-size: 30px 30px; } .content { position: relative; z-index: 10; height: 100%; display: flex; flex-direction: column; padding: 28px 35px; }
+        .header { margin-bottom: 12px; } .name-container { position: relative; margin-bottom: 6px; } .name-glow { position: absolute; top: -10px; left: 0; right: 0; height: 40px; opacity: 0.08; filter: blur(20px); background-color: #00F5FF; } .name { position: relative; font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700; color: #FFFFFF; line-height: 1; letter-spacing: 0.08em; text-transform: uppercase; } .divider { width: 100%; height: 1px; background-color: #00F5FF; margin-bottom: 8px; } .job-title { font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: #00F5FF; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 5px; } .tagline { font-family: 'Inter', sans-serif; font-size: 10.5px; font-weight: 400; color: #9CA3AF; line-height: 1.4; }
+        .main-grid { flex: 1; display: flex; gap: 15px; } .left-column { width: 36%; background-color: #111827; border-radius: 2px; padding: 16px; display: flex; flex-direction: column; gap: 11px; } .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; color: #00F5FF; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 5px; padding-bottom: 3px; border-bottom: 1px solid #00F5FF; } .contact-item { display: flex; flex-direction: column; gap: 1px; margin-bottom: 5px; } .contact-label { font-family: 'JetBrains Mono', monospace; font-size: 7.5px; font-weight: 600; color: #00F5FF; letter-spacing: 0.1em; text-transform: uppercase; } .contact-value { font-family: 'Inter', sans-serif; font-size: 9px; font-weight: 400; color: #FFFFFF; word-break: break-word; text-decoration: none; } a.contact-value:hover { color: #00F5FF; }
+        .skills-section { display: flex; flex-direction: column; gap: 6px; } .skill-category-title { font-family: 'JetBrains Mono', monospace; font-size: 8px; font-weight: 600; color: #3B82F6; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 3px; } .skill-capsules { display: flex; flex-wrap: wrap; gap: 3px; } .skill-capsule { padding: 2px 5px; border: 1px solid #00F5FF; background-color: transparent; border-radius: 2px; font-family: 'JetBrains Mono', monospace; font-size: 8px; font-weight: 500; color: #FFFFFF; }
+        .language-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px; } .language-name { font-family: 'Inter', sans-serif; font-size: 9px; font-weight: 500; color: #FFFFFF; } .language-level { font-family: 'Inter', sans-serif; font-size: 8px; font-weight: 400; color: #9CA3AF; }
+        .aide-badge { display: inline-block; padding: 2px 6px; border: 1px solid #3B82F6; background-color: rgba(59, 130, 246, 0.08); border-radius: 2px; font-family: 'JetBrains Mono', monospace; font-size: 7.5px; font-weight: 600; color: #3B82F6; letter-spacing: 0.05em; } .aides-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 3px; }
+        .qr-wrapper { margin-top: auto; display: flex; justify-content: center; gap: 15px; padding: 8px 0 0 0; } .qr-item { display: flex; flex-direction: column; align-items: center; gap: 3px; } .qr-image { width: 46px; height: 46px; border: 1px solid rgba(0, 245, 255, 0.3); padding: 2px; border-radius: 4px; } .qr-text { font-family: 'JetBrains Mono', monospace; font-size: 7px; color: #00F5FF; text-transform: uppercase; letter-spacing: 0.05em; }
+        .right-column { width: 64%; display: flex; flex-direction: column; gap: 10px; } .profile-text { font-family: 'Inter', sans-serif; font-size: 9.5px; font-weight: 400; color: #9CA3AF; line-height: 1.45; } .projects-container { display: flex; flex-direction: column; gap: 5px; } .project-divider { width: 100%; height: 1px; background-color: #00F5FF; opacity: 0.3; margin-top: 2px; margin-bottom: 2px; } .project-block { display: flex; flex-direction: column; gap: 1px; } .project-title { font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 600; color: #FFFFFF; } .project-description { font-family: 'Inter', sans-serif; font-size: 8.5px; font-weight: 400; color: #9CA3AF; line-height: 1.3; white-space: pre-line; }
+        .education-experience-container { display: flex; flex-direction: column; gap: 6px; } .edu-exp-item { display: flex; flex-direction: column; gap: 1px; } .edu-exp-title { font-family: 'Space Grotesk', sans-serif; font-size: 10.5px; font-weight: 600; color: #FFFFFF; } .edu-exp-subtitle { font-family: 'Inter', sans-serif; font-size: 9px; font-weight: 400; color: #9CA3AF; } .edu-exp-year { font-family: 'JetBrains Mono', monospace; font-size: 8.5px; font-weight: 500; color: #00F5FF; }
+        .program-list { font-family: 'Inter', sans-serif; font-size: 8px; color: #9CA3AF; line-height: 1.35; columns: 2; column-gap: 10px; } .program-list span { display: block; margin-bottom: 1px; }
+    </style>
+</head>
+<body>
+<div class="cv-container"><div class="grid-background"></div>
+    <div class="content">
+        <header class="header"><div class="name-container"><div class="name-glow"></div><h1 class="name">HASSAN CHAJAI</h1></div><div class="divider"></div>
+            <h2 class="job-title">Développeur Web Fullstack — Stagiaire</h2>
+            <p class="tagline">Profil atypique en reconversion × Rigueur scientifique × Passion pour le code × Prêt à s'investir.</p>
+        </header>
+        <div class="main-grid">
+            <aside class="left-column">
+                <section><h3 class="section-title">CONTACT</h3>
+                    <div class="contact-item"><div class="contact-label">EMAIL</div><a href="mailto:chajai.hassan@gmail.com" class="contact-value">chajai.hassan@gmail.com</a></div>
+                    <div class="contact-item"><div class="contact-label">TÉLÉPHONE</div><div class="contact-value">+32 492 41 15 45</div></div>
+                    <div class="contact-item"><div class="contact-label">ADRESSE</div><div class="contact-value">Cité André Renard 107, 6180 Courcelles</div></div>
+                    <div class="contact-item"><div class="contact-label">GITHUB</div><a href="https://github.com/hassinho10" target="_blank" class="contact-value">github.com/hassinho10</a></div>
+                    <div class="contact-item"><div class="contact-label">LINKEDIN</div><a href="https://linkedin.com/in/hassanchajai" target="_blank" class="contact-value">linkedin.com/in/hassanchajai</a></div>
+                </section>
+                <section><h3 class="section-title">COMPÉTENCES</h3>
+                    <div class="skills-section">
+                        <div><div class="skill-category-title">FRONT-END</div><div class="skill-capsules"><div class="skill-capsule">HTML5</div><div class="skill-capsule">CSS3</div><div class="skill-capsule">JavaScript</div><div class="skill-capsule">Angular</div><div class="skill-capsule">React (intro)</div><div class="skill-capsule">Ionic</div><div class="skill-capsule">Responsive Design</div></div></div>
+                        <div><div class="skill-category-title">BACK-END</div><div class="skill-capsules"><div class="skill-capsule">Node.js</div><div class="skill-capsule">NestJS</div><div class="skill-capsule">Express.js</div><div class="skill-capsule">APIs REST</div><div class="skill-capsule">PHP</div></div></div>
+                        <div><div class="skill-category-title">BASE DE DONNÉES</div><div class="skill-capsules"><div class="skill-capsule">SQL</div><div class="skill-capsule">MySQL</div><div class="skill-capsule">Modélisation relationnelle</div></div></div>
+                        <div><div class="skill-category-title">DEVOPS & OUTILS</div><div class="skill-capsules"><div class="skill-capsule">Git</div><div class="skill-capsule">Docker</div><div class="skill-capsule">Kubernetes</div><div class="skill-capsule">Cloud</div><div class="skill-capsule">SCRUM</div><div class="skill-capsule">UML</div><div class="skill-capsule">Figma</div></div></div>
+                        <div><div class="skill-category-title">SAVOIR-ÊTRE</div><div class="skill-capsules"><div class="skill-capsule">Autodidacte</div><div class="skill-capsule">Rigueur</div><div class="skill-capsule">Esprit analytique</div><div class="skill-capsule">Esprit d'équipe</div><div class="skill-capsule">Adaptabilité</div></div></div>
+                    </div>
+                </section>
+                <section><h3 class="section-title">LANGUES</h3>
+                    <div class="language-item"><span class="language-name">Français</span><span class="language-level">Maternel</span></div>
+                    <div class="language-item"><span class="language-name">Anglais</span><span class="language-level">Professionnel (technique)</span></div>
+                    <div class="language-item"><span class="language-name">Italien</span><span class="language-level">Maternel</span></div>
+                </section>
+                <section><h3 class="section-title">AIDES FOREM</h3><div class="aides-row"><span class="aide-badge">APE</span><span class="aide-badge">PFI</span><span class="aide-badge">SESAM</span></div></section>
+                <div class="qr-wrapper"><div class="qr-item"><img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://github.com/hassinho10&color=00F5FF&bgcolor=0B0F14" alt="QR GitHub" class="qr-image"><span class="qr-text">GitHub</span></div><div class="qr-item"><img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://linkedin.com/in/hassanchajai&color=00F5FF&bgcolor=0B0F14" alt="QR LinkedIn" class="qr-image"><span class="qr-text">LinkedIn</span></div></div>
+            </aside>
+            <main class="right-column">
+                <section><h3 class="section-title">À PROPOS</h3>
+                    <p class="profile-text">Développeur web fullstack en reconversion, actuellement en formation intensive à Technofutur TIC (Gosselies). Après 5 ans en Sciences Biomédicales (HELHa) et une expérience en industrie pharmaceutique GMP (Catalent, Novo Nordisk), j'ai choisi de me reconvertir vers le développement. Ma formation couvre l'ensemble du stack JavaScript moderne : Angular et React côté front-end, Node.js, NestJS et Express côté back-end, SQL, Docker, Kubernetes, Cloud, SCRUM et cybersécurité. En parallèle, je conçois mes propres applications pour résoudre des problèmes concrets. Mon objectif : intégrer votre équipe en stage pour contribuer à vos projets, monter en compétences sur vos technologies et démontrer que mon profil atypique est un atout.</p>
+                </section>
+                <section><h3 class="section-title">FORMATION EN COURS</h3>
+                    <div class="education-experience-container">
+                        <div class="edu-exp-item"><h4 class="edu-exp-title">Développeur Web Apps Full Stack — Technologies JavaScript Modernes</h4><p class="edu-exp-subtitle">TECHNOFUTUR TIC — Gosselies (Charleroi)</p><p class="edu-exp-year">2026 (6 mois — en cours)</p></div>
+                    </div>
+                    <div class="program-list" style="margin-top:5px;">
+                        <span>• Algorithmique</span>
+                        <span>• SQL déclaratif & procédural</span>
+                        <span>• HTML / CSS</span>
+                        <span>• JavaScript & Ajax</span>
+                        <span>• Angular (front-end)</span>
+                        <span>• React (introduction)</span>
+                        <span>• Node.js (back-end)</span>
+                        <span>• NestJS & Express.js</span>
+                        <span>• APIs REST</span>
+                        <span>• Git</span>
+                        <span>• Docker & Kubernetes</span>
+                        <span>• Cloud</span>
+                        <span>• UML & SCRUM</span>
+                        <span>• Ionic (multi-plateformes)</span>
+                        <span>• Cybersécurité</span>
+                        <span>• IA pour le dev</span>
+                        <span>• Projet individuel Web App</span>
+                    </div>
+                </section>
+                <section><h3 class="section-title">FORMATION ANTÉRIEURE</h3>
+                    <div class="education-experience-container">
+                        <div class="edu-exp-item"><h4 class="edu-exp-title">Sciences Biomédicales</h4><p class="edu-exp-subtitle">HELHa — Montignies-sur-Sambre</p><p class="edu-exp-year">09-2020 - 06-2025</p></div>
+                        <div class="edu-exp-item"><h4 class="edu-exp-title">CESS</h4><p class="edu-exp-subtitle">Athénée Royal Les Marlaires — Gosselies</p><p class="edu-exp-year">06-2020</p></div>
+                    </div>
+                </section>
+                <section><h3 class="section-title">PROJETS PERSONNELS</h3>
+                    <div class="projects-container">
+                        <div class="project-block"><h4 class="project-title">BarberConnect</h4><p class="project-description">App de gestion de rendez-vous : calendrier dynamique, créneaux, logique métier, interface client.</p></div>
+                        <div class="project-divider"></div>
+                        <div class="project-block"><h4 class="project-title">RestoOrder</h4><p class="project-description">App de commande en ligne : menu dynamique, panier, suivi temps réel, base SQL structurée.</p></div>
+                        <div class="project-divider"></div>
+                        <div class="project-block"><h4 class="project-title">Msemmen Pro</h4><p class="project-description">Site e-commerce : catalogue produits, filtrage dynamique, UX soignée, responsive.</p></div>
+                        <div class="project-divider"></div>
+                        <div class="project-block"><h4 class="project-title">Life Manager</h4><p class="project-description">Dashboard productivité : statistiques, suivi d'habitudes, indicateurs visuels.</p></div>
+                    </div>
+                </section>
+                <section><h3 class="section-title">EXPÉRIENCE</h3>
+                    <div class="education-experience-container">
+                        <div class="edu-exp-item"><h4 class="edu-exp-title">Opérateur / Technicien Pharma</h4><p class="edu-exp-subtitle">Catalent / Novo Nordisk — Bruxelles | 2025</p><p class="project-description">Pharma GMP : rigueur, traçabilité, normes qualité, travail en équipe critique.</p></div>
+                        <div class="edu-exp-item"><h4 class="edu-exp-title">Étudiant Horeca</h4><p class="edu-exp-subtitle">Secteur restauration | 2020 - 2024</p><p class="project-description">Gestion du stress, relation client, adaptabilité, travail en équipe.</p></div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</div>
+</body>
+</html>

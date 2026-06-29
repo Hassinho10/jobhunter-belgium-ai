@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lettre de Motivation - Hassan Chajai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+    @page { size: 210mm 297mm; margin: 0; } @media print { body { padding: 0 !important; background-color: #0B0F14 !important; } .cv-container { width: 210mm !important; height: 297mm !important; box-shadow: none !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } } * { margin: 0; padding: 0; box-sizing: border-box; } body { background-color: #0B0F14; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; } .cv-container { width: 210mm; height: 297mm; background-color: #0B0F14; position: relative; box-shadow: 0 0 20px rgba(0,245,255,0.1); overflow: hidden; } .grid-background { position: absolute; inset: 0; opacity: 0.03; background-image: linear-gradient(#00F5FF 1px, transparent 1px), linear-gradient(90deg, #00F5FF 1px, transparent 1px); background-size: 30px 30px; } .content { position: relative; z-index: 10; height: 100%; display: flex; flex-direction: column; padding: 30px 35px; }
+    .header { margin-bottom: 15px; } .name-container { position: relative; margin-bottom: 6px; } .name-glow { position: absolute; top: -10px; left: 0; right: 0; height: 40px; opacity: 0.08; filter: blur(20px); background-color: #00F5FF; } .name { position: relative; font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700; color: #FFFFFF; line-height: 1; letter-spacing: 0.08em; text-transform: uppercase; } .divider { width: 100%; height: 1px; background-color: #00F5FF; margin-bottom: 10px; } .job-title { font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500; color: #00F5FF; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 6px; } .tagline { font-family: 'Inter', sans-serif; font-size: 10.5px; font-weight: 400; color: #9CA3AF; line-height: 1.4; }
+    .main-grid { flex: 1; display: flex; gap: 15px; } .left-column { width: 36%; background-color: #111827; border-radius: 2px; padding: 18px; display: flex; flex-direction: column; gap: 20px; } .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600; color: #00F5FF; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid #00F5FF; } .contact-item { display: flex; flex-direction: column; gap: 2px; margin-bottom: 8px; } .contact-label { font-family: 'JetBrains Mono', monospace; font-size: 8px; font-weight: 600; color: #00F5FF; letter-spacing: 0.1em; text-transform: uppercase; } .contact-value { font-family: 'Inter', sans-serif; font-size: 9.5px; font-weight: 400; color: #FFFFFF; word-break: break-word; text-decoration: none; line-height: 1.4; }
+    .stage-info-box { background-color: rgba(0, 245, 255, 0.04); border: 1px solid rgba(0, 245, 255, 0.15); border-radius: 2px; padding: 12px; display: flex; flex-direction: column; gap: 6px; } .stage-info-row { display: flex; flex-direction: column; gap: 1px; } .stage-info-label { font-family: 'JetBrains Mono', monospace; font-size: 7.5px; font-weight: 600; color: #00F5FF; letter-spacing: 0.1em; text-transform: uppercase; } .stage-info-value { font-family: 'Inter', sans-serif; font-size: 9.5px; font-weight: 500; color: #FFFFFF; }
+    .aide-badge { display: inline-block; padding: 3px 7px; border: 1px solid #3B82F6; background-color: rgba(59, 130, 246, 0.08); border-radius: 2px; font-family: 'JetBrains Mono', monospace; font-size: 8px; font-weight: 600; color: #3B82F6; letter-spacing: 0.05em; } .aides-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 2px; }
+    .qr-wrapper { margin-top: auto; display: flex; justify-content: center; gap: 15px; padding: 10px 0 0 0; } .qr-item { display: flex; flex-direction: column; align-items: center; gap: 4px; } .qr-image { width: 50px; height: 50px; border: 1px solid rgba(0, 245, 255, 0.3); padding: 2px; border-radius: 4px; } .qr-text { font-family: 'JetBrains Mono', monospace; font-size: 7px; color: #00F5FF; text-transform: uppercase; letter-spacing: 0.05em; }
+    .right-column { width: 64%; display: flex; flex-direction: column; padding-top: 5px; padding-left: 20px; padding-right: 35px; } .letter-header-info { display: flex; flex-direction: column; gap: 10px; margin-bottom: 25px; } .letter-object { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; color: #FFFFFF; letter-spacing: 0.05em; padding: 10px 14px; background-color: rgba(0, 245, 255, 0.05); border-left: 3px solid #00F5FF; } .letter-body { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 400; color: #9CA3AF; line-height: 1.7; display: flex; flex-direction: column; gap: 14px; text-align: justify; } .letter-greeting { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; color: #FFFFFF; margin-top: 5px; } .letter-signature-container { margin-top: 35px; text-align: right; } .letter-signature { font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 600; color: #00F5FF; }
+</style>
+</head>
+<body>
+<div class="cv-container"><div class="grid-background"></div>
+  <div class="content">
+    <header class="header"><div class="name-container"><div class="name-glow"></div><h1 class="name">HASSAN CHAJAI</h1></div><div class="divider"></div>
+      <h2 class="job-title">Développeur Web Fullstack — Stagiaire</h2>
+      <p class="tagline">Profil atypique en reconversion × Rigueur scientifique × Passion pour le code × Prêt à s'investir.</p>
+    </header>
+    <div class="main-grid">
+      <aside class="left-column">
+        <section><h3 class="section-title">MES COORDONNÉES</h3>
+          <div class="contact-item"><div class="contact-label">EMAIL</div><div class="contact-value">chajai.hassan@gmail.com</div></div>
+          <div class="contact-item"><div class="contact-label">TÉLÉPHONE</div><div class="contact-value">+32 492 41 15 45</div></div>
+          <div class="contact-item"><div class="contact-label">ADRESSE</div><div class="contact-value">Cité André Renard 107<br>6180 Courcelles</div></div>
+          <div class="contact-item"><div class="contact-label">GITHUB</div><div class="contact-value">github.com/hassinho10</div></div>
+        </section>
+        <section><h3 class="section-title">CANDIDATURE</h3>
+          <div class="contact-item"><div class="contact-label">OBJET</div><div class="contact-value">Candidature spontanée<br>Stage Développeur Web Fullstack</div></div>
+          <div class="contact-item"><div class="contact-label">FAIT À</div><div class="contact-value">Courcelles, le 15/04/2026</div></div>
+        </section>
+        <section><h3 class="section-title">INFOS STAGE</h3>
+          <div class="stage-info-box">
+            <div class="stage-info-row"><span class="stage-info-label">DÉBUT</span><span class="stage-info-value">18 mai 2026</span></div>
+            <div class="stage-info-row"><span class="stage-info-label">DURÉE</span><span class="stage-info-value">5 semaines</span></div>
+            <div class="stage-info-row"><span class="stage-info-label">TYPE</span><span class="stage-info-value">Non rémunéré</span></div>
+            <div class="stage-info-row"><span class="stage-info-label">CONVENTION</span><span class="stage-info-value">FOREM</span></div>
+            <div class="stage-info-row"><span class="stage-info-label">FORMATION</span><span class="stage-info-value">Technofutur TIC — Gosselies</span></div>
+            <div class="stage-info-row"><span class="stage-info-label">ZONE</span><span class="stage-info-value">Charleroi & alentours</span></div>
+            <div class="stage-info-row"><span class="stage-info-label">AIDES DISPONIBLES</span><div class="aides-row"><span class="aide-badge">APE</span><span class="aide-badge">PFI</span><span class="aide-badge">SESAM</span></div></div>
+          </div>
+        </section>
+        <div class="qr-wrapper"><div class="qr-item"><img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://github.com/hassinho10&color=00F5FF&bgcolor=0B0F14" alt="QR GitHub" class="qr-image"><span class="qr-text">GitHub</span></div><div class="qr-item"><img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://linkedin.com/in/hassanchajai&color=00F5FF&bgcolor=0B0F14" alt="QR LinkedIn" class="qr-image"><span class="qr-text">LinkedIn</span></div></div>
+      </aside>
+
+      <main class="right-column">
+        <div class="letter-header-info"><div class="letter-object">OBJET : CANDIDATURE SPONTANÉE — STAGE DÉVELOPPEUR WEB FULLSTACK (5 SEMAINES)</div></div>
+        <div class="letter-body">
+          <div class="letter-greeting">Madame, Monsieur,</div>
+
+          <p>Actuellement en formation intensive « Développeur Web Apps Full Stack » à Technofutur TIC (Gosselies), je suis à la recherche d'un stage de 5 semaines à partir du 18 mai 2026. C'est avec motivation que je vous soumets ma candidature pour rejoindre votre équipe. Ce stage est conventionné par le FOREM et non rémunéré.</p>
+
+          <p>Ma formation couvre l'ensemble du stack JavaScript moderne : Angular côté front-end, Node.js, NestJS et Express côté back-end, SQL et modélisation relationnelle pour les bases de données, Git, Docker et Kubernetes pour le déploiement, SCRUM pour la méthodologie projet, et cybersécurité. Le tout aboutit à un Projet Individuel de Développement d'une application web complète et multi-plateformes.</p>
+
+          <p>Mon parcours est atypique. Avant de me tourner vers le code, j'ai consacré 5 ans à des études en Sciences Biomédicales à la HELHa, puis travaillé comme opérateur/technicien dans l'industrie pharmaceutique chez Catalent et Novo Nordisk, en environnement GMP. De ce secteur exigeant, j'ai conservé une méthode de travail rigoureuse, un esprit analytique et une forte capacité à travailler en équipe dans des environnements où la qualité n'est pas négociable.</p>
+
+          <p>En parallèle de ma formation, je conçois mes propres applications — un système de réservation pour coiffeurs (BarberConnect), une plateforme de commande en ligne (RestoOrder), un site e-commerce (Msemmen Pro) et un tableau de bord de productivité (Life Manager). Ces projets témoignent de ma capacité à livrer des solutions fonctionnelles, de la base de données à l'interface utilisateur.</p>
+
+          <p>Ce que je recherche dans un stage, c'est un environnement où je peux contribuer à des projets concrets, m'adapter à votre stack technique et démontrer que mon profil atypique est un atout, pas un frein. Je suis prêt à m'investir pleinement dès le premier jour.</p>
+
+          <p>Je suis éligible aux aides FOREM (APE, PFI, SESAM) et basé à Courcelles, à proximité de Charleroi. Vous trouverez ci-joint mon CV détaillant mon parcours et mes réalisations.</p>
+
+          <p>Je serais ravi d'échanger avec vous lors d'un entretien. Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, mes salutations respectueuses.</p>
+        </div>
+        <div class="letter-signature-container"><div class="letter-signature">Hassan Chajai</div></div>
+      </main>
+    </div>
+  </div>
+</div>
+</body>
+</html>
