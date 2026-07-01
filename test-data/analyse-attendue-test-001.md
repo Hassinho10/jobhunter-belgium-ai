@@ -23,7 +23,7 @@ Le poste n'exige pas une grande expérience professionnelle en développement, c
 - Rigueur, communication, travail en équipe et relation client présents dans le profil.
 - Les projets personnels montrent une capacité à construire des outils concrets.
 - Le parcours pharma GMP renforce la crédibilité sur la rigueur, la traçabilité et les procédures.
-- L'intérêt pour l'IA et l'automatisation est cohérent avec le projet JobHunter Belgium AI et le profil développeur en reconversion.
+- L'intérêt pour les outils numériques et l'automatisation est cohérent avec le projet JobHunter Belgium AI et le profil développeur en reconversion.
 
 ## Points faibles
 

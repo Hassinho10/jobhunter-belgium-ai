@@ -79,8 +79,8 @@ function renderMarkdown(row, offer, compatibility, plan) {
 
 ## Score et décision
 
-- Score IA : ${row.score_ia} / 100
-- Décision IA : ${row.decision_ia}
+- Score : ${row.score_ia} / 100
+- Décision : ${row.decision_ia}
 - Décision humaine : ${row.decision_humaine}
 - Statut actuel : ${row.statut}
 
@@ -144,7 +144,7 @@ ${created.map((item) => `- ${item}`).join("\n")}
 - La candidature n'est pas marquée comme envoyée.
 - Aucune preuve d'envoi n'a été inventée.
 - Aucune date de relance n'a été inventée.
-- Google Sheets, Gmail, Google Drive, n8n et OpenAI ne sont pas connectés.
+- Les services externes ne sont pas connectés.
 
 ## Prochaine étape
 

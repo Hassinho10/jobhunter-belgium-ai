@@ -571,26 +571,12 @@ function findBrowser() {
 }
 
 async function renderPdfWithPlaywright(htmlPath, pdfPath) {
-  const nodeModulesPath = path.join(
-    os.homedir(),
-    ".cache",
-    "codex-runtimes",
-    "codex-primary-runtime",
-    "dependencies",
-    "node",
-    "node_modules",
-  );
-  const pnpmPath = path.join(nodeModulesPath, ".pnpm");
-  if (!fs.existsSync(pnpmPath)) return null;
-  const playwrightPackage = fs
-    .readdirSync(pnpmPath)
-    .find((name) => /^playwright@\d/.test(name));
-  const playwrightPath = playwrightPackage
-    ? path.join(pnpmPath, playwrightPackage, "node_modules", "playwright")
-    : path.join(nodeModulesPath, "playwright");
-  if (!fs.existsSync(playwrightPath)) return null;
-
-  const { chromium } = require(playwrightPath);
+  let chromium;
+  try {
+    ({ chromium } = require("playwright"));
+  } catch {
+    return null;
+  }
   const executablePath = findBrowser();
   if (!executablePath) return null;
 
@@ -700,7 +686,7 @@ function trackingMarkdown(row) {
 - Offre : ${row.poste}
 - Entreprise : ${row.entreprise || "non renseignée"}
 - Score : ${row.score_ia}/100
-- Décision IA : ${row.decision_ia}
+- Décision : ${row.decision_ia}
 - Décision humaine : ${row.decision_humaine}
 - Statut : ${row.statut}
 - Preuve d'envoi : non

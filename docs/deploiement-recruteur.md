@@ -4,24 +4,14 @@
 
 Rendre JobHunter Belgium AI testable par un recruteur sans connecter de compte personnel et sans envoyer de candidature.
 
-## Mode recommandé pour publication GitHub
+## Contenu à publier
 
-Publier le code source avec :
+Le dépôt public contient le code source, les modèles de démonstration et la documentation produit.
 
-- `app/`
-- `scripts/`
-- `sources/`
-- `config/`
-- `cv-template/`
-- `lettre-template/`
-- `test-data/offre-test.json`
-- `README.md`
-- `README_RECRUITER.md`
-- `.env.example`
-
-Ne pas publier :
+À ne pas publier :
 
 - `.env`
+- `node_modules/`
 - `generated/`
 - `review-packages/`
 - `proofs/`
@@ -52,19 +42,19 @@ Lancement sur réseau local :
 npm run app:network
 ```
 
-## Hébergement web possible
+## Hébergement web
 
 L'app est un serveur Node.js natif. Elle peut être déployée sur un hébergeur Node.js simple.
 
-## Option simple : Render
+## Option Render
 
-Le fichier `render.yaml` prépare un Web Service Render gratuit :
+Le fichier `render.yaml` prépare un Web Service Render :
 
 - build : `npm install`
 - start : `npm start`
 - `HOST=0.0.0.0`
 
-Étapes :
+Déploiement :
 
 1. Publier le projet sur GitHub.
 2. Aller sur Render.
@@ -87,8 +77,8 @@ node app/server.js
 
 La recherche FOREM Open Data nécessite un accès réseau sortant.
 
-La génération PDF nécessite Chrome, Edge ou un runtime compatible. Si l'hébergeur ne fournit pas de navigateur headless, l'app génère quand même les fichiers HTML, le message et le suivi, puis indique que les PDF doivent être générés localement.
+La génération PDF nécessite Chrome, Edge ou un navigateur headless compatible. Si l'hébergeur ne fournit pas ce composant, l'application génère quand même les fichiers HTML, le message et le suivi, puis indique que les PDF doivent être produits localement.
 
 ## Message court pour recruteur
 
-> J'ai développé JobHunter Belgium AI, un prototype local Node.js qui recherche des offres, les score par rapport à mon profil, prépare un CV/une lettre adaptés, génère un suivi FOREM et bloque tout envoi tant qu'une validation humaine n'est pas donnée. Le projet montre ma capacité à structurer un outil utile, automatiser un flux métier et rester rigoureux sur la traçabilité.
+> J'ai développé JobHunter Belgium AI, une application Node.js qui recherche des offres, calcule un score de compatibilité, prépare un CV et une lettre adaptés, génère un suivi FOREM et bloque tout envoi tant qu'une validation humaine n'est pas donnée. Le projet montre ma capacité à structurer un outil utile, automatiser un flux métier et rester rigoureux sur la traçabilité.

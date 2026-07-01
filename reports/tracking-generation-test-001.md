@@ -32,7 +32,7 @@
 - La candidature n'est pas marquée comme envoyée.
 - Aucune preuve d'envoi n'a été inventée.
 - Aucune date de relance n'a été inventée.
-- Google Sheets, Gmail, Google Drive, n8n et OpenAI ne sont pas connectés.
+- Les services externes ne sont pas connectés.
 
 ## Prochaine étape
 

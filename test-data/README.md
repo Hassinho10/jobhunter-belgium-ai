@@ -1,15 +1,13 @@
-# Données de test
+# Données de démonstration
 
-Ce dossier contient des offres fictives utilisées pour tester le moteur local de JobHunter Belgium AI.
+Ce dossier contient des offres fictives utilisées pour tester le moteur local.
 
-L'objectif est de valider progressivement :
+Ces données servent à valider :
 
-- l'analyse d'une offre ;
+- la lecture d'une offre ;
 - l'extraction des critères importants ;
-- le scoring par rapport à `cv-template/profile-data.json` ;
+- le scoring par rapport au profil local ;
 - la recommandation humaine ;
-- la préparation future d'une adaptation de CV ou de message.
+- la préparation d'un dossier de candidature.
 
-Ces données ne viennent pas d'Internet et ne correspondent à aucune candidature réelle.
-
-Aucune connexion n'est faite avec n8n, Gmail, Google Drive, Google Sheets ou OpenAI à cette étape.
+Elles ne viennent pas d'Internet et ne correspondent à aucune candidature réelle.

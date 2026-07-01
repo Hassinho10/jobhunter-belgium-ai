@@ -65,7 +65,7 @@ Développeur web fullstack en reconversion, actuellement en formation intensive 
 
 ## Risques de survente
 
-- Survendre l'automatisation alors que le profil documente surtout le développement web et l'intérêt IA.
+- Survendre l'automatisation alors que le profil documente surtout le développement web et l'intérêt pour les outils numériques.
 - Laisser croire à une maîtrise de n8n, Make ou Google Sheets non confirmée.
 - Présenter un profil trop administratif alors que l'objectif principal reste le développement web fullstack.
 - Utiliser des formulations trop affirmatives sur le support utilisateur.

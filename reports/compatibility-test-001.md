@@ -44,7 +44,7 @@ Décision : **opportunité intéressante**
 ### objectifs
 
 - Score : 9 / 15
-- Correspondances : stage, développement web, IA / productivité, projets concrets
+- Correspondances : stage, développement web, outils numériques / productivité, projets concrets
 - Points d'attention : outils numériques à confirmer dans le profil. ; automatisation présent dans l'offre mais pas fortement documenté dans le profil. ; support administratif digital présent dans l'offre mais pas fortement documenté dans le profil.
 
 ## Points forts

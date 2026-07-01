@@ -210,7 +210,7 @@ function scoreObjectifs(profile, offer) {
     { label: "outils numériques", terms: ["outils numériques", "outils numeriques", "digital"], points: 2 },
     { label: "développement web", terms: ["développement web", "developpement web", "web"], points: 3 },
     { label: "automatisation", terms: ["automatisation", "automatisations"], points: 2 },
-    { label: "IA / productivité", terms: ["ia", "productivité", "productivite"], points: 1 },
+    { label: "outils numériques / productivité", terms: ["productivité", "productivite", "outils numériques", "outils numeriques"], points: 1 },
     { label: "support administratif digital", terms: ["support administratif", "administratif"], points: 2 },
     { label: "projets concrets", terms: ["projets concrets", "projet web", "application"], points: 2 }
   ];

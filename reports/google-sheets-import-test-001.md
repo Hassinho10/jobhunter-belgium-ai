@@ -24,12 +24,12 @@
 
 - Statut candidature : candidature_prete_non_envoyee
 - Décision humaine : OUI
-- Score IA local : 78
+- Score local : 78
 - Preuve d'envoi disponible : non
 - Relance prévue : non
 
 ## Limites
 
-Ces CSV sont préparés pour un import manuel. Aucun compte Google Sheets, Gmail, Drive, n8n ou OpenAI n'a été connecté.
+Ces CSV sont préparés pour un import manuel. Aucun service externe n'a été connecté.
 
 Aucune candidature n'a été envoyée et aucune preuve fictive n'a été créée.

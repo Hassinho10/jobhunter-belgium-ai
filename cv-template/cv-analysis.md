@@ -112,7 +112,7 @@ Programme de formation complémentaire :
 - SQL déclaratif et procédural.
 - Ajax.
 - Cybersécurité.
-- IA pour le développement.
+- Outils de développement.
 - Projet individuel Web App.
 
 ### Soft skills

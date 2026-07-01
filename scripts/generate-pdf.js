@@ -154,7 +154,7 @@ function report(browser, cvSize, letterSize) {
 
 ## Outil utilisé
 
-- Outil effectif : Playwright via runtime local Codex + Chrome local pour la génération initiale.
+- Outil effectif : navigateur local piloté en mode headless.
 - Vérification relançable : Node.js natif.
 - Navigateur local : \`${browser}\`
 - Aucune connexion externe utilisée.

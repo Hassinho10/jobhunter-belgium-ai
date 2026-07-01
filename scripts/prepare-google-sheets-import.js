@@ -257,7 +257,7 @@ function main() {
           date_action: offer.date_detection,
           id_offre: offer.id_offre,
           action_ia: "scoring_offre_et_preparation_locale",
-          modele_utilise: "moteur local sans IA externe",
+          modele_utilise: "moteur local transparent",
           score_ia: compatibility.score_total,
           resume_ia: `Score local ${compatibility.score_total}/100 pour ${offer.poste}.`,
           decision_ia: compatibility.decision,
@@ -331,11 +331,11 @@ function main() {
         `\n\n## Statuts importants\n\n` +
         `- Statut candidature : ${status}\n` +
         `- Décision humaine : ${validation.decision_humaine}\n` +
-        `- Score IA local : ${compatibility.score_total}\n` +
+        `- Score local : ${compatibility.score_total}\n` +
         `- Preuve d'envoi disponible : ${hasSendingProof ? "oui" : "non"}\n` +
         `- Relance prévue : non\n\n` +
         `## Limites\n\n` +
-        `Ces CSV sont préparés pour un import manuel. Aucun compte Google Sheets, Gmail, Drive, n8n ou OpenAI n'a été connecté.\n\n` +
+        `Ces CSV sont préparés pour un import manuel. Aucun service externe n'a été connecté.\n\n` +
         `Aucune candidature n'a été envoyée et aucune preuve fictive n'a été créée.\n`,
     ),
   );

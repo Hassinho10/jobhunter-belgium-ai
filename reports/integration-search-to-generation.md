@@ -83,7 +83,7 @@ Exemple pour `FOREM-1958728` :
 - Un score faible reste affiché et doit inciter à la prudence.
 - La génération ne signifie jamais que la candidature est envoyée.
 - Aucune preuve d'envoi n'est créée.
-- Gmail, Google Drive, Google Sheets, n8n et OpenAI ne sont pas connectés.
+- Les services externes ne sont pas connectés.
 
 ## Test en ligne de commande
 

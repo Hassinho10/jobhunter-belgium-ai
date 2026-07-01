@@ -1,15 +1,17 @@
 # JobHunter Belgium AI - Démo recruteur
 
-JobHunter Belgium AI est une mini-application locale qui aide à analyser une offre d'emploi ou de stage, mesurer sa compatibilité avec un profil junior en reconversion, puis préparer des documents de candidature sans jamais envoyer automatiquement la candidature.
+JobHunter Belgium AI est une mini-application locale qui accompagne une recherche d'emploi ou de stage en Belgique.
+
+Elle permet de tester un flux complet : analyser une offre, mesurer sa compatibilité avec un profil junior, préparer des documents de candidature et produire un suivi FOREM, sans envoi automatique.
 
 ## Ce que la démo montre
 
 - Recherche d'offres via sources autorisées, avec FOREM Open Data en priorité.
 - Analyse locale d'une offre collée ou trouvée automatiquement.
 - Score de compatibilité transparent.
-- Recommandation humaine : OUI / NON / MODIFIER.
+- Recommandation : OUI / NON / MODIFIER.
 - Génération locale d'un CV HTML, d'une lettre HTML, d'un message et d'un suivi FOREM.
-- Génération PDF si l'environnement possède Chrome ou Edge disponible.
+- Génération PDF si Chrome ou Edge est disponible.
 - Traçabilité : aucune candidature envoyée, aucune preuve inventée.
 
 ## Lancer en local
@@ -39,9 +41,9 @@ http://localhost:4173
 ## Limites assumées
 
 - Aucun envoi réel de candidature.
-- Aucune connexion Gmail, Google Drive, Google Sheets, n8n ou OpenAI.
+- Aucune connexion à un compte personnel.
 - Les clés Adzuna et Jooble sont optionnelles et absentes par défaut.
-- Sur un hébergement web, la génération PDF peut dépendre de Chrome/Edge disponible sur le serveur. Si les PDF ne sont pas disponibles, les versions HTML restent consultables.
+- Sur un hébergement web, la génération PDF dépend du navigateur disponible sur le serveur. Si les PDF ne sont pas disponibles, les versions HTML restent consultables.
 - Le projet est un prototype local orienté démonstration de méthode, pas un SaaS multi-utilisateur.
 
 ## Sécurité et éthique
@@ -49,4 +51,3 @@ http://localhost:4173
 Le projet ne scrape pas LinkedIn, Indeed, StepStone ou des sites protégés. Il ne contourne aucun CAPTCHA, login ou mécanisme anti-bot.
 
 Chaque candidature reste bloquée tant qu'une validation humaine explicite n'est pas donnée.
-

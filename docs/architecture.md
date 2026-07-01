@@ -1,133 +1,79 @@
 # Architecture
 
-Ce document décrit l'architecture cible de JobHunter Belgium AI. Pour l'instant, aucune connexion externe n'est configurée.
+Ce document présente l'architecture fonctionnelle de JobHunter Belgium AI.
 
 ## Vue d'ensemble
 
-JobHunter Belgium AI sera construit autour de plusieurs briques :
+L'application repose sur plusieurs blocs :
 
-- n8n pour orchestrer les étapes.
-- Google Sheets pour le suivi structuré.
-- Gmail pour recevoir ou préparer des candidatures.
-- Google Drive pour stocker CV, messages, PDF et preuves.
-- OpenAI pour analyser, scorer, reformuler et générer.
-- Un CV HTML/CSS comme source de mise en page personnalisable.
-- Une validation humaine obligatoire avant toute action sensible.
+- Interface locale JobHunter Studio.
+- Profil candidat structuré en JSON.
+- Moteur de scoring local.
+- Générateurs HTML pour CV, lettre et message.
+- Conversion PDF locale lorsque le navigateur le permet.
+- Suivi FOREM en CSV, JSON et Markdown.
+- Validation humaine obligatoire avant toute génération finale.
+- Connecteurs d'offres autorisés, avec FOREM Open Data en priorité.
 
-## n8n
+## Pipeline local
 
-n8n jouera le rôle d'orchestrateur.
+1. Une offre est saisie manuellement ou récupérée via une source autorisée.
+2. L'offre est normalisée dans un format commun.
+3. Le moteur compare l'offre au profil candidat.
+4. Un score, une décision et des points d'attention sont produits.
+5. Un plan d'adaptation est préparé sans modifier les originaux.
+6. La personne valide OUI / NON / MODIFIER.
+7. Après OUI, le dossier local de candidature est généré.
+8. Le suivi FOREM est mis à jour avec le statut approprié.
 
-Il pourra plus tard :
+## Données locales
 
-- déclencher une analyse lorsqu'une nouvelle offre est reçue ;
-- envoyer les données de l'offre au module IA ;
-- mettre à jour Google Sheets ;
-- préparer un CV adapté ;
-- préparer un message de candidature ;
-- demander une validation humaine ;
-- stocker les preuves ;
-- planifier les relances.
+- `cv-template/profile-data.json` : profil structuré.
+- `test-data/` : offres de démonstration.
+- `data/` : résultats de recherche courants.
+- `reports/` : rapports de compatibilité et de contrôle.
+- `validations/` : décisions et clarifications humaines.
+- `generated/` : fichiers produits localement.
+- `tracking/` : suivi FOREM local.
+- `proofs/` : index de preuves réelles.
 
-n8n ne devra pas envoyer automatiquement une candidature sans validation humaine.
+## Recherche d'offres
 
-## Google Sheets
+Les sources autorisées sont utilisées par API ou fichier structuré. Le projet ne contourne pas les protections de sites, ne scrape pas les plateformes protégées et ne franchit pas de CAPTCHA ou de login.
 
-Google Sheets servira de base de suivi.
+## Documents de candidature
 
-Les modèles CSV du dossier `sheets-templates` pourront devenir des onglets Google Sheets :
+Le CV et la lettre de base servent de modèles. Les adaptations autorisées portent sur le titre, le résumé, l'ordre des éléments et la mise en avant des informations réelles.
 
-- offres détectées ;
-- candidatures envoyées ;
-- preuves FOREM ;
-- relances ;
-- historique IA ;
-- paramètres personnels.
-
-L'objectif est d'avoir un suivi clair, vérifiable et facilement partageable avec une conseillère FOREM.
-
-## Gmail
-
-Gmail pourra être utilisé plus tard pour :
-
-- détecter des offres reçues par email ;
-- préparer des brouillons de candidature ;
-- conserver les échanges avec les recruteurs ;
-- identifier les réponses reçues.
-
-Au stade actuel, Gmail n'est pas connecté.
-
-## Google Drive
-
-Google Drive pourra stocker :
-
-- le CV de base ;
-- les CV adaptés ;
-- les versions PDF ;
-- les messages de candidature ;
-- les captures ou preuves d'envoi ;
-- les documents utiles pour le FOREM.
-
-Les tableaux contiendront seulement des liens vers ces fichiers.
-
-## OpenAI
-
-OpenAI pourra intervenir plus tard pour :
-
-- analyser une offre ;
-- extraire les critères importants ;
-- comparer l'offre au CV ;
-- calculer un score de compatibilite ;
-- expliquer le score ;
-- adapter le CV sans inventer ;
-- générer un message de candidature ;
-- préparer une demande de validation humaine.
-
-Règle essentielle : l'IA ne doit jamais inventer d'expérience, de diplôme, de compétence ou de certification.
-
-## CV HTML/CSS
-
-Le dossier `cv-template` contient la base du CV.
-
-Le CV HTML/CSS permettra :
-
-- une mise en page contrôlée ;
-- une adaptation fine selon l'offre ;
-- une future génération PDF ;
-- une séparation claire entre contenu, données et style.
-
-Le fichier `data-example.json` sert d'exemple de structure pour les données du CV.
+Les informations absentes du profil ne doivent pas être ajoutées.
 
 ## Validation humaine
 
-La validation humaine est une étape centrale.
-
-Avant toute candidature, le système devra présenter :
+Avant toute génération finale, l'application présente :
 
 - l'offre analysée ;
-- le score IA ;
-- les raisons du score ;
-- les points à vérifier ;
-- le CV adapté ;
-- le message proposé.
+- le score de compatibilité ;
+- les points forts ;
+- les points faibles ;
+- le plan proposé ;
+- les éléments à vérifier.
 
-La personne doit choisir :
+La décision possible est :
 
-- OUI : la candidature peut être préparée ou envoyée selon le workflow futur ;
-- NON : l'offre est refusée ou mise de côté ;
-- MODIFIER : le CV, le message ou l'analyse doit être corrigé.
+- `OUI` : génération locale autorisée ;
+- `NON` : offre refusée ou mise de côté ;
+- `MODIFIER` : correction requise avant génération.
 
-## Stockage des preuves
+## Suivi FOREM
 
-Chaque candidature doit pouvoir être prouvée.
+Le suivi conserve :
 
-Les preuves possibles incluent :
+- l'offre ;
+- le score ;
+- la décision ;
+- les documents préparés ;
+- le statut courant ;
+- les preuves réelles lorsqu'elles existent ;
+- les relances uniquement lorsqu'elles sont justifiées.
 
-- confirmation d'envoi ;
-- capture d'écran ;
-- email envoyé ;
-- réponse automatique ;
-- document PDF ;
-- lien vers une plateforme.
-
-Ces preuves seront référencées dans `preuves-forem.csv`.
+Aucune candidature ne doit être indiquée comme envoyée sans action réelle et preuve réelle.

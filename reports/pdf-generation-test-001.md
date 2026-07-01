@@ -12,7 +12,7 @@
 
 ## Outil utilisé
 
-- Outil effectif : Playwright via runtime local Codex + Chrome local pour la génération initiale.
+- Outil effectif : navigateur local piloté en mode headless.
 - Vérification relançable : Node.js natif.
 - Navigateur local : `C:\Program Files\Google\Chrome\Application\chrome.exe`
 - Aucune connexion externe utilisée.

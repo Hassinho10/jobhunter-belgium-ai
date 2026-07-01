@@ -1,16 +1,14 @@
 # n8n Workflows
 
-Ce dossier accueillera plus tard les workflows n8n exportés en JSON.
+Ce dossier est prévu pour accueillir plus tard des workflows n8n exportés en JSON.
 
 Les workflows pourront orchestrer :
 
 - la réception ou collecte d'offres ;
-- l'analyse IA ;
 - la mise à jour des tableaux de suivi ;
-- la préparation du CV adapté ;
-- la préparation du message de candidature ;
+- la préparation des documents ;
 - la validation humaine ;
-- le stockage des preuves ;
+- le stockage des preuves réelles ;
 - le suivi des relances.
 
-Aucun workflow n8n n'est encore ajouté à ce stade.
+Aucun workflow n8n n'est inclus pour le moment.

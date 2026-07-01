@@ -1,127 +1,88 @@
 # Règles d'adaptation du CV et des candidatures
 
-Ce document définit les règles officielles du projet JobHunter Belgium AI pour toute adaptation future de CV, lettre ou message de candidature.
+Ce document définit les règles appliquées par JobHunter Belgium AI pour préparer un CV, une lettre ou un message de candidature.
 
 ## Principe central
 
-L'IA aide à préparer une candidature, mais elle ne remplace pas la validation humaine.
+Le système peut aider à reformuler, organiser et mettre en avant des informations réelles. Il ne remplace jamais la validation humaine.
 
 Aucune candidature ne doit être envoyée automatiquement sans décision humaine explicite.
 
-## Ce que l'IA peut faire
+## Adaptations autorisées
 
-L'IA peut reformuler :
+Le système peut :
 
-- un titre professionnel ;
-- un résumé de profil ;
-- une description de projet ;
-- une description d'expérience ;
-- une lettre de motivation ;
-- un message de candidature.
+- reformuler un titre professionnel ;
+- reformuler un résumé de profil ;
+- réorganiser l'ordre des compétences ;
+- réorganiser les projets ou expériences ;
+- mettre en avant les éléments les plus pertinents pour une offre ;
+- adapter une lettre ou un message de candidature ;
+- signaler les informations à vérifier.
 
-L'IA peut réorganiser :
+## Adaptations interdites
 
-- l'ordre des compétences ;
-- l'ordre des projets ;
-- l'ordre des expériences ;
-- les paragraphes d'une lettre ;
-- les éléments mis en avant selon une offre.
+Le système ne peut jamais inventer :
 
-L'IA peut mettre en avant :
+- diplôme ;
+- formation ;
+- certification ;
+- compétence ;
+- niveau de maîtrise ;
+- expérience ;
+- entreprise ;
+- mission ;
+- durée ;
+- date ;
+- résultat chiffré ;
+- disponibilité ;
+- langue ou niveau de langue ;
+- preuve d'envoi ;
+- relance.
 
-- les compétences réelles les plus pertinentes ;
-- les projets réels les plus proches de l'offre ;
-- les expériences réelles utiles pour le poste ;
-- les mots-clés présents à la fois dans l'offre et dans le profil ;
-- les informations pratiques utiles comme la localisation, le type de recherche ou les aides disponibles.
-
-## Ce que l'IA ne peut jamais faire
-
-L'IA ne peut jamais inventer :
-
-- un diplôme ;
-- une formation ;
-- une certification ;
-- une compétence ;
-- un niveau de maîtrise ;
-- une expérience ;
-- une entreprise ;
-- une mission ;
-- une durée ;
-- une date ;
-- un résultat chiffré ;
-- une disponibilité ;
-- une langue ou un niveau de langue.
-
-L'IA ne peut pas transformer :
-
-- une introduction en expertise ;
-- une formation en expérience professionnelle ;
-- un projet personnel en mission client ;
-- une compétence citée dans une offre en compétence détenue si elle n'est pas présente dans le profil.
+Un projet personnel ne doit pas être présenté comme une mission client. Une compétence mentionnée dans une offre ne devient pas une compétence acquise si elle n'est pas présente dans le profil.
 
 ## Validation humaine obligatoire
 
-Avant toute candidature, le système doit présenter :
+Avant génération finale, le système doit présenter :
 
 - l'offre analysée ;
 - le score de compatibilité ;
-- la recommandation IA ;
 - les points forts ;
 - les écarts et risques ;
-- le CV adapté proposé ;
-- la lettre ou le message proposé ;
+- les documents proposés ;
 - les informations à vérifier.
 
-La décision humaine doit être l'une des suivantes :
+La décision humaine doit être :
 
-- OUI : la candidature peut être préparée pour envoi.
-- NON : l'offre est refusée ou mise de côté.
-- MODIFIER : le contenu doit être corrigé avant toute suite.
+- `OUI` : génération locale autorisée ;
+- `NON` : offre refusée ou mise de côté ;
+- `MODIFIER` : correction requise avant toute suite.
 
-## Suivi FOREM obligatoire
+## Suivi FOREM
 
-Chaque candidature validée doit être enregistrée dans le suivi FOREM.
+Chaque candidature validée doit pouvoir être reliée à un suivi clair :
 
-Le suivi doit conserver :
+- date ;
+- entreprise ;
+- poste ;
+- source ;
+- lien de l'offre ;
+- documents utilisés ;
+- statut ;
+- preuve réelle si disponible ;
+- relance si elle est planifiée.
 
-- la date de candidature ;
-- l'entreprise ;
-- le poste ;
-- la source de l'offre ;
-- le lien de l'offre ;
-- le CV utilisé ;
-- le message ou la lettre utilisée ;
-- le statut ;
-- la date de relance éventuelle ;
-- les commentaires utiles.
+## Preuves
 
-## Stockage des preuves
-
-Chaque preuve utile doit être stockée ou référencée.
-
-Exemples de preuves :
+Une preuve doit correspondre à une action réelle :
 
 - email envoyé ;
 - confirmation de candidature ;
 - capture d'écran ;
 - accusé de réception ;
-- réponse automatique ;
+- réponse recruteur ;
 - document PDF ;
 - lien vers une plateforme.
 
-Chaque preuve doit pouvoir être reliée à une candidature précise.
-
-## Journal IA
-
-Chaque action importante de l'IA doit être journalisée :
-
-- analyse d'offre ;
-- scoring ;
-- recommandation ;
-- adaptation proposée ;
-- message généré ;
-- validation humaine ;
-- modification demandée.
-
-Cette traçabilité permet de comprendre pourquoi une candidature a été préparée, modifiée, envoyée ou refusée.
+Aucune preuve ne doit être inventée ou créée pour simuler un envoi.

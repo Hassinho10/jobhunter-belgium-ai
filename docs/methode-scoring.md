@@ -82,7 +82,7 @@ Critères :
 - développement web ;
 - automatisation ;
 - outils numériques ;
-- IA ou no-code ;
+- automatisation ou no-code ;
 - projets concrets ;
 - montée en compétences.
 
