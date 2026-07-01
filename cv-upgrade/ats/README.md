@@ -31,5 +31,5 @@ Objectif de cette version :
 
 - Version ATS compactée pour tenir en une page A4.
 - JobHunter Belgium AI ajouté comme projet personnel réel en cours.
-- Lien GitHub de JobHunter Belgium AI à ajouter après publication.
+- Lien GitHub de JobHunter Belgium AI ajouté : `https://github.com/Hassinho10/jobhunter-belgium-ai`.
 - Les projets non publiés restent indiqués avec liens à ajouter.

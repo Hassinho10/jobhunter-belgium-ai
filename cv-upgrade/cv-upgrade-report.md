@@ -74,6 +74,6 @@ Aucune information inventée n'a été ajoutée. Les données manquantes sont ma
 - Vérification PDF locale : version visuelle = 1 page, version ATS = 1 page.
 - Les deux CV HTML ont été compactés pour viser une sortie PDF en une seule page A4.
 - JobHunter Belgium AI a été ajouté comme projet personnel réel en cours.
-- Le lien GitHub de JobHunter Belgium AI reste marqué `à ajouter` jusqu'à publication réelle.
+- Le lien GitHub de JobHunter Belgium AI est maintenant ajouté : `https://github.com/Hassinho10/jobhunter-belgium-ai`.
 - Les autres projets gardent des liens `à ajouter` et des stacks `à préciser` quand l'information n'est pas confirmée.
 - Aucune compétence, expérience, date, démo ou publication GitHub n'a été inventée.

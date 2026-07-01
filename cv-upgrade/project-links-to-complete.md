@@ -34,7 +34,7 @@
 - Démonstrations hébergées : à ajouter seulement si elles existent réellement.
 # Mise à jour JobHunter et publication
 
-- JobHunter Belgium AI : lien GitHub à ajouter après publication du dépôt.
-- JobHunter Belgium AI : préciser si une démo locale, capture d'écran ou README public doit être montré.
+- JobHunter Belgium AI : lien GitHub publié : `https://github.com/Hassinho10/jobhunter-belgium-ai`.
+- JobHunter Belgium AI : démo publique à ajouter après déploiement.
 - Les projets non publiés peuvent être cités comme projets personnels ou projets en cours, mais ils ne doivent pas être présentés comme déjà disponibles en ligne.
 - Les liens GitHub et démos doivent rester `à ajouter` tant qu'ils ne sont pas réellement publiés.
